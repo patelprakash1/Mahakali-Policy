@@ -11,9 +11,13 @@
             --muted: #666
         }
 
+        html,
         body {
-            font-family: Inter, system-ui, sans-serif;
+            height: 100%;
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: Inter, system-ui, sans-serif;
             color: #222;
             line-height: 1.6;
             text-align: center
@@ -35,23 +39,18 @@
         }
 
         .container {
+            flex: 1;
             max-width: 900px;
             margin: 28px auto;
             padding: 0 18px;
             text-align: center
         }
 
-        h1 {
-            color: #0b4f3a
-        }
-
-        footer {
-            border-top: 1px solid #eee;
-            padding: 22px 18px;
-            margin-top: 40px;
-            background: #fafafa;
-            text-align: center
-            
+        h1,
+        h2,
+        h3 {
+            color: #0b4f3a;
+           
         }
 
         .card {
@@ -65,6 +64,34 @@
             text-align: left
         }
 
+        .buttons {
+            margin-top: 20px;
+           
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 18px;
+            border-radius: 6px;
+            background: var(--accent);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s
+        }
+
+        .btn:hover {
+            background: #094e3b
+        }
+
+        footer {
+            border-top: 1px solid #eee;
+            padding: 22px 18px;
+            background: #fafafa;
+            text-align: center
+        }
+
         a {
             color: var(--accent);
             text-decoration: none
@@ -74,45 +101,6 @@
             font-size: 0.9rem;
             color: var(--muted)
         }
-
-        .buttons {
-            margin-top: 20px;
-        
-        }
-
-        .btn {
-            display: inline-block;
-            background: var(--accent);
-            color: #fff;
-            padding: 10px 20px;
-            margin: 5px;
-            border-radius: 6px;
-            text-decoration: none;
-            transition: background 0.3s
-        }
-
-        .btn:hover {
-            background: #094d38
-        }
-
-        html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  flex: 1; /* pushes footer down */
-}
-
-footer {
-  border-top: 1px solid #eee;
-  padding: 22px 18px;
-  background: #fafafa;
-  text-align: center;
-}
-
     </style>
 </head>
 
@@ -120,17 +108,20 @@ footer {
     <header>
         <img src="https://connect.mahakalitextile.com/src/Logo.png" alt="Mahakali Textile Logo" class="logo">
         <div>
-            <strong>Contact Us</strong>
-          
+            <strong>Mahakali Textile</strong>
+            <div class="small">Contact Us</div>
         </div>
     </header>
 
     <div class="container">
         <div class="card">
             <h1>Contact Us</h1>
-            <p><strong>Address:</strong> Mahakali Textile, Ahmedabad, Gujarat, India</p>
-            <p><strong>Phone:</strong> +91 98765 43210</p>
-            <p><strong>Email:</strong> admin@mahakalitextile.example</p>
+            <p><strong>Developer/Company:</strong> Mahakali Textile</p>
+            <p><strong>Email:</strong> <a
+                    href="mailto:mahakalitextilesurat@gmail.com">mahakalitextilesurat@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+917575099996">+91 75750 99996</a></p>
+            <p><strong>Address:</strong> A-3001 TO 3006 AND 3012 TO 3017, Ring Rd, Millennium Textile Market, Moti
+                Begumwadi, New Textile Market, Surat, Gujarat 395002</p>
 
             <div class="buttons">
                 <a href="privacy.html" class="btn">Privacy Policy</a>
@@ -147,7 +138,7 @@ footer {
                 <div class="small">© Mahakali Textile • <span id="year"></span></div>
             </div>
             <div>
-                <a href="contact.html">Contact</a> |
+                <a href="index.html">Contact</a> |
                 <a href="privacy.html">Privacy Policy</a> |
                 <a href="terms.html">Terms & Conditions</a>
             </div>

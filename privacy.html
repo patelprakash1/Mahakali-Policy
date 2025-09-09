@@ -11,9 +11,13 @@
             --muted: #666
         }
 
+        html,
         body {
-            font-family: Inter, system-ui, sans-serif;
+            height: 100%;
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: Inter, system-ui, sans-serif;
             color: #222;
             line-height: 1.6;
             text-align: center
@@ -35,6 +39,7 @@
         }
 
         .container {
+            flex: 1;
             max-width: 900px;
             margin: 28px auto;
             padding: 0 18px;
@@ -44,15 +49,8 @@
         h1,
         h2,
         h3 {
-            color: #0b4f3a
-        }
-
-        footer {
-            border-top: 1px solid #eee;
-            padding: 22px 18px;
-            margin-top: 40px;
-            background: #fafafa;
-            text-align: center
+            color: #0b4f3a;
+           
         }
 
         .card {
@@ -66,6 +64,13 @@
             text-align: left
         }
 
+        footer {
+            border-top: 1px solid #eee;
+            padding: 22px 18px;
+            background: #fafafa;
+            text-align: center
+        }
+
         a {
             color: var(--accent);
             text-decoration: none
@@ -75,26 +80,6 @@
             font-size: 0.9rem;
             color: var(--muted)
         }
-
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .container {
-            flex: 1;
-            /* pushes footer down */
-        }
-
-        footer {
-            border-top: 1px solid #eee;
-            padding: 22px 18px;
-            background: #fafafa;
-            text-align: center;
-        }
     </style>
 </head>
 
@@ -102,32 +87,65 @@
     <header>
         <img src="https://connect.mahakalitextile.com/src/Logo.png" alt="Mahakali Textile Logo" class="logo">
         <div>
-            <strong>Privacy Policy</strong>
-
+            <strong>Mahakali Textile</strong>
+            <div class="small">Privacy Policy</div>
         </div>
     </header>
 
     <div class="container">
         <div class="card">
             <h1>Privacy Policy</h1>
-            <p><strong>Effective date:</strong> September 9, 2025</p>
+            <p><strong>Last updated:</strong> September 9, 2025</p>
 
-            <h3>1. Data Collection</h3>
-            <p>We do not collect, store, or share personal data. All user accounts are created and managed by the
-                administrator.</p>
+            <h3>Introduction</h3>
+            <p>Mahakali Textile (“we,” “us,” “our”) provides the Mahakali Textile mobile application (“App”). This
+                Privacy Policy explains our practices regarding personal and sensitive user data. The App is used by
+                business users whose accounts are created by an administrator. The App does not collect, share, or sell
+                personal data from end users.</p>
 
-            <h3>2. User Accounts</h3>
-            <p>Any account details are entered only by the administrator. End-users cannot create or edit accounts
-                themselves.</p>
+            <h3>No user data collection</h3>
+            <ul>
+                <li><strong>No collection:</strong> The App does not collect personal information (such as name, email,
+                    phone), device identifiers, location, contacts, media, financial information, health data, or other
+                    categories defined in Google Play’s Data safety taxonomy.</li>
+                <li><strong>No sharing:</strong> The App does not share data with third parties and does not include
+                    advertising or analytics SDKs that collect user data.</li>
+                <li><strong>Admin-created accounts:</strong> User profiles are provisioned by an administrator; no
+                    self-registration exists in the App.</li>
+            </ul>
 
-            <h3>3. Data Sharing</h3>
-            <p>No data is shared with third parties since no personal data is collected.</p>
+            <h3>Permissions and on-device processing</h3>
+            <p>The App is designed to avoid requesting runtime permissions. If any Android permission is introduced in
+                future versions, it will be used strictly for on-device functionality and not for collecting or
+                transmitting personal data off the device, consistent with Google Play guidance.</p>
 
-            <h3>4. Security</h3>
-            <p>We implement reasonable measures to keep the App safe, even though no personal data is processed.</p>
+            <h3>Security</h3>
+            <ul>
+                <li><strong>Transport security:</strong> All communication with our backend uses HTTPS/TLS encryption.
+                </li>
+                <li><strong>Access control:</strong> Only administrator-provisioned users can access account-specific
+                    resources.</li>
+            </ul>
 
-            <h3>5. Contact</h3>
-            <p>For any questions about this Privacy Policy, contact us at <strong>admin@mahakalitextile.example</strong>
+            <h3>Data retention and deletion</h3>
+            <p>Since the App does not collect end-user personal data, there is no personal data retention. If
+                administrator account records exist on our backend, they are maintained for operational purposes and can
+                be deleted upon the administrator’s written request.</p>
+
+            <h3>Children’s privacy</h3>
+            <p>The App is intended for business use and not directed to children under 13/16 (as applicable). No
+                personal data from children is knowingly collected.</p>
+
+            <h3>Changes to this policy</h3>
+            <p>We may update this Privacy Policy to reflect changes in the App or legal requirements. Material changes
+                will be posted here with an updated “Last updated” date.</p>
+
+            <h3>Contact</h3>
+            <p><strong>Developer/Company:</strong> Mahakali Textile<br>
+                <strong>Email:</strong> mahakalitextilesurat@gmail.com<br>
+                <strong>Phone:</strong> +91 75750 99996<br>
+                <strong>Address:</strong> A-3001 TO 3006 AND 3012 TO 3017, Ring Rd, Millennium Textile Market, Moti
+                Begumwadi, New Textile Market, Surat, Gujarat 395002
             </p>
         </div>
     </div>
